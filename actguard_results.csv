@@ -1,0 +1,157 @@
+scenario_id,model,class,object,payload_source,should_block,l1_flag,l1_verdict,l3_flag,l3_code,flagged,outcome,agent_ms,l1_ms,l3_ms,detect_ms
+SCEN-001,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,2056.6,0.0072,0.0,0.01
+SCEN-002,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,template_fallback,True,True,ESCALATE,False,,True,TP,394.3,0.0079,441.6,441.56
+SCEN-003,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,444.7,0.0079,340.9,340.95
+SCEN-004,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,476.7,0.0045,281.2,281.19
+SCEN-005,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.0079,226.5,226.48
+SCEN-006,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.005,0.0,0.01
+SCEN-007,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,659.9,0.0064,284.8,284.76
+SCEN-008,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.0067,275.2,275.21
+SCEN-009,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,True,BLOCK,False,,True,FP,784.8,0.005,0.0,0.01
+SCEN-010,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,402.4,0.0064,866.4,866.36
+SCEN-011,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,True,BLOCK,False,,True,FP,396.3,0.0048,0.0,0.0
+SCEN-012,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,595.7,0.0052,264.8,264.84
+SCEN-013,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,578.0,0.0052,284.7,284.67
+SCEN-014,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,881.1,0.0045,0.0,0.0
+SCEN-015,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,template_fallback,True,True,ESCALATE,False,,True,TP,508.1,0.0067,347.1,347.15
+SCEN-016,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,481.6,0.0086,319.0,319.01
+SCEN-017,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,488.4,0.0057,272.7,272.75
+SCEN-018,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.0052,258.1,258.11
+SCEN-019,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.005,0.0,0.01
+SCEN-020,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,539.3,0.0057,280.7,280.74
+SCEN-021,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.0062,266.4,266.43
+SCEN-022,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,True,BLOCK,False,,True,FP,536.3,0.0043,0.0,0.0
+SCEN-023,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,406.4,0.0067,366.8,366.81
+SCEN-024,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,480.0,0.0057,284.4,284.41
+SCEN-025,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,615.3,0.0057,540.5,540.5
+SCEN-026,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,803.2,0.0057,250.5,250.49
+SCEN-027,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,template_fallback,True,True,BLOCK,False,,True,TP,530.4,0.0057,0.0,0.01
+SCEN-028,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,template_fallback,True,True,ESCALATE,False,,True,TP,444.1,0.0076,244.3,244.26
+SCEN-029,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,590.3,0.0057,0.0,0.01
+SCEN-030,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,492.5,0.0052,245.6,245.6
+SCEN-031,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.0048,428.0,427.99
+SCEN-032,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0043,0.0,0.0
+SCEN-033,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,485.7,0.0069,189.6,189.6
+SCEN-034,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.0062,283.3,283.27
+SCEN-035,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,True,BLOCK,False,,True,FP,522.1,0.0057,0.0,0.01
+SCEN-036,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,502.2,0.0064,458.1,458.06
+SCEN-037,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,template_fallback,False,False,,False,,False,TN,365.0,0.005,268.2,268.19
+SCEN-038,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,493.9,0.005,296.8,296.76
+SCEN-039,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,482.3,0.0048,314.6,314.62
+SCEN-040,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,template_fallback,True,True,BLOCK,False,,True,TP,472.2,0.0057,0.0,0.01
+SCEN-041,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,template_fallback,True,True,ESCALATE,False,,True,TP,569.0,0.0069,363.7,363.7
+SCEN-042,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,528.6,0.0081,265.2,265.23
+SCEN-043,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,625.7,0.0069,236.3,236.29
+SCEN-044,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.0064,214.1,214.1
+SCEN-045,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0057,0.0,0.01
+SCEN-046,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,750.4,0.0076,179.5,179.5
+SCEN-047,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.0086,239.4,239.44
+SCEN-048,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,template_fallback,False,False,,False,,False,TN,509.6,0.006,441.2,441.21
+SCEN-049,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,399.4,0.006,378.5,378.47
+SCEN-050,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,template_fallback,False,False,,False,,False,TN,363.2,0.0057,237.9,237.87
+SCEN-051,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,589.4,0.0052,239.7,239.67
+SCEN-052,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,590.2,0.0055,366.7,366.66
+SCEN-053,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,611.3,0.0067,0.0,0.01
+SCEN-054,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,template_fallback,True,True,ESCALATE,False,,True,TP,507.9,0.0072,354.3,354.26
+SCEN-055,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,template_fallback,True,True,ESCALATE,False,,True,TP,518.4,0.0081,259.9,259.86
+SCEN-056,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,494.4,0.005,251.7,251.71
+SCEN-057,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.005,302.0,302.02
+SCEN-058,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0043,0.0,0.0
+SCEN-059,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,566.7,0.005,237.6,237.64
+SCEN-060,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.0067,336.7,336.73
+SCEN-061,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,372.4,0.0062,214.2,214.25
+SCEN-062,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,399.4,0.0069,291.1,291.14
+SCEN-063,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,True,BLOCK,False,,True,FP,526.7,0.0064,0.0,0.01
+SCEN-064,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,705.2,0.0067,353.9,353.86
+SCEN-065,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,695.8,0.0045,290.2,290.18
+SCEN-066,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,530.4,0.0064,0.0,0.01
+SCEN-067,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,agent,True,True,ESCALATE,False,,True,TP,463.5,0.0067,387.8,387.78
+SCEN-068,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,435.3,0.0079,247.2,247.2
+SCEN-069,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,505.3,0.0067,223.1,223.08
+SCEN-070,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.0057,239.8,239.84
+SCEN-071,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0038,0.0,0.0
+SCEN-072,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,538.5,0.0062,186.5,186.47
+SCEN-073,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.006,211.1,211.1
+SCEN-074,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,True,BLOCK,False,,True,FP,534.1,0.0048,0.0,0.0
+SCEN-075,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,396.1,0.0057,326.7,326.73
+SCEN-076,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,template_fallback,False,False,,False,,False,TN,532.5,0.0052,276.1,276.13
+SCEN-077,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,567.9,0.0052,316.0,316.04
+SCEN-078,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,563.3,0.0055,301.2,301.19
+SCEN-079,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,826.7,0.0043,0.0,0.0
+SCEN-080,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,template_fallback,True,True,ESCALATE,False,,True,TP,519.3,0.0064,338.3,338.34
+SCEN-081,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,693.3,0.0122,238.8,238.79
+SCEN-082,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,647.1,0.0067,245.5,245.55
+SCEN-083,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.0067,235.5,235.49
+SCEN-084,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0045,0.0,0.0
+SCEN-085,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,677.7,0.0057,197.1,197.13
+SCEN-086,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.0064,220.6,220.58
+SCEN-087,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,template_fallback,False,False,,False,,False,TN,453.3,0.0064,217.4,217.45
+SCEN-088,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,472.1,0.0081,295.9,295.95
+SCEN-089,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,477.6,0.006,277.4,277.43
+SCEN-090,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,561.3,0.0055,256.6,256.64
+SCEN-091,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,569.8,0.0048,281.4,281.45
+SCEN-092,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,False,,False,,False,FN,571.3,0.0057,253.7,253.75
+SCEN-093,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,template_fallback,True,True,ESCALATE,False,,True,TP,1875.7,0.0091,283.3,283.28
+SCEN-094,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,513.2,0.0319,294.4,294.4
+SCEN-095,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,473.7,0.0064,244.5,244.47
+SCEN-096,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.005,203.7,203.67
+SCEN-097,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0188,0.0,0.02
+SCEN-098,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,556.4,0.0055,192.6,192.57
+SCEN-099,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.0081,214.7,214.7
+SCEN-100,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,template_fallback,False,False,,False,,False,TN,510.6,0.0072,223.4,223.45
+SCEN-101,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,577.4,0.0086,294.6,294.61
+SCEN-102,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,True,BLOCK,False,,True,FP,860.3,0.0045,0.0,0.0
+SCEN-103,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,True,BLOCK,False,,True,FP,769.4,0.0045,0.0,0.0
+SCEN-104,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,589.4,0.0064,287.3,287.3
+SCEN-105,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,876.5,0.0043,0.0,0.0
+SCEN-106,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,agent,True,True,ESCALATE,False,,True,TP,523.6,0.0069,1057.0,1056.99
+SCEN-107,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,520.6,0.0076,206.1,206.13
+SCEN-108,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,478.5,0.0052,240.6,240.56
+SCEN-109,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.005,218.1,218.14
+SCEN-110,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0043,0.0,0.0
+SCEN-111,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,524.6,0.0055,191.6,191.6
+SCEN-112,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.006,206.0,206.01
+SCEN-113,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,True,BLOCK,False,,True,FP,517.9,0.0045,0.0,0.0
+SCEN-114,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,404.6,0.0062,292.9,292.87
+SCEN-115,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,template_fallback,False,False,,False,,False,TN,444.9,0.0055,314.4,314.42
+SCEN-116,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,True,BLOCK,False,,True,FP,658.7,0.0048,0.0,0.0
+SCEN-117,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,703.6,0.0072,283.8,283.83
+SCEN-118,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,1088.3,0.0055,0.0,0.01
+SCEN-119,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,agent,True,True,ESCALATE,False,,True,TP,683.0,0.0069,414.8,414.78
+SCEN-120,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,489.2,0.0117,251.8,251.84
+SCEN-121,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,483.4,0.0052,194.6,194.57
+SCEN-122,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.0048,206.6,206.65
+SCEN-123,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0036,0.0,0.0
+SCEN-124,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,515.9,0.0489,195.4,195.46
+SCEN-125,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.006,305.1,305.15
+SCEN-126,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,442.2,0.006,270.0,269.98
+SCEN-127,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,421.6,0.0057,299.3,299.31
+SCEN-128,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,477.5,0.0064,260.4,260.44
+SCEN-129,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,498.0,0.0122,262.5,262.54
+SCEN-130,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,595.3,0.005,1231.5,1231.49
+SCEN-131,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,False,,False,,False,FN,451.8,0.0048,362.3,362.33
+SCEN-132,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,template_fallback,True,True,ESCALATE,False,,True,TP,493.5,0.0064,376.0,375.99
+SCEN-133,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,469.0,0.0117,194.6,194.59
+SCEN-134,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,626.5,0.0067,215.0,214.96
+SCEN-135,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.006,190.5,190.49
+SCEN-136,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0062,0.0,0.01
+SCEN-137,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,741.4,0.0081,202.8,202.82
+SCEN-138,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.006,354.5,354.53
+SCEN-139,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,404.4,0.0062,268.0,267.99
+SCEN-140,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,496.0,0.0062,335.5,335.48
+SCEN-141,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,501.1,0.0052,221.5,221.51
+SCEN-142,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,862.5,0.0067,239.9,239.94
+SCEN-143,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,2140.7,0.0062,282.1,282.12
+SCEN-144,Qwen/Qwen2.5-1.5B-Instruct,Class 1a: Restricted Picklist,Account,agent,True,True,BLOCK,False,,True,TP,2626.2,0.0186,0.0,0.02
+SCEN-145,Qwen/Qwen2.5-1.5B-Instruct,Class 1c: Misconfigured Picklist,Case,agent,True,True,ESCALATE,False,,True,TP,474.9,0.0072,321.3,321.33
+SCEN-146,Qwen/Qwen2.5-1.5B-Instruct,Class 1b: Unrestricted Picklist,Account,agent,True,True,ESCALATE,False,,True,TP,550.7,0.0315,218.0,217.99
+SCEN-147,Qwen/Qwen2.5-1.5B-Instruct,Class 2: Locked Record,Opportunity,agent,True,False,,False,,False,FN,612.6,0.0069,252.5,252.54
+SCEN-148,Qwen/Qwen2.5-1.5B-Instruct,Class 4: Missing Required Field,Lead,template,True,False,,True,REQUIRED_FIELD_MISSING,True,TP,0.0,0.0062,211.2,211.2
+SCEN-149,Qwen/Qwen2.5-1.5B-Instruct,Class 5: Invalid Cross-Object,Account,template,True,True,BLOCK,False,,True,TP,0.0,0.0057,0.0,0.01
+SCEN-150,Qwen/Qwen2.5-1.5B-Instruct,Class 6: Validation Rule,Opportunity,agent,True,False,,True,FIELD_CUSTOM_VALIDATION_EXCEPTION,True,TP,747.6,0.0055,192.1,192.1
+SCEN-151,Qwen/Qwen2.5-1.5B-Instruct,Class 8: Idempotency Violation,Contact,template,True,False,,True,DUPLICATES_DETECTED,True,TP,0.0,0.0057,241.4,241.42
+SCEN-152,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,404.3,0.0064,246.0,245.99
+SCEN-153,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Case,agent,False,False,,False,,False,TN,425.3,0.0095,275.1,275.11
+SCEN-154,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Picklist,Account,agent,False,False,,False,,False,TN,526.7,0.0052,199.3,199.29
+SCEN-155,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Text Update,Account,agent,False,False,,False,,False,TN,610.2,0.0052,471.1,471.15
+SCEN-156,Qwen/Qwen2.5-1.5B-Instruct,Benign: Valid Numeric,Opportunity,agent,False,False,,False,,False,TN,562.0,0.0052,262.6,262.61
